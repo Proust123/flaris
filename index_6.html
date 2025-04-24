@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index_6</title>
+
+    <style>
+
+        *{
+            margin : 0%;
+            padding : 0%;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .section1{
+            height : 100vh;
+            width : 100%;
+            /* border : 1px solid; */
+            background-image: url(./images/Flaris_Header_info_prasowe.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+        }
+        #nav_bar{
+            height : 110px;
+            width : 100%;
+            /* border : 1px solid white; */
+            padding: 1px;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.822);
+        }
+        #logo{
+            height : 60px;
+            width : 170px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-position: center;
+            background-size: cover;
+            margin-top: 30px;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+        #nav_ul{
+            height : 50px;
+            width : 920px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        #list{
+            color : white;
+            list-style: none;
+            display: inline;
+            margin : 15px;
+            padding: 1px;
+            cursor: pointer;
+        }
+        #icon1{
+            height : 25px;
+            width : 25px;
+            /* border  : 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://toppng.com/uploads/preview/facebook-black-white-icon-facebook-face-book-png-facebook-icon-for-footer-11562873944v8l8yjbnby.png);
+            margin-left: 20px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        #icon2{
+            height : 25px;
+            width : 25px;
+            /* border  : 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://www.seekpng.com/png/detail/789-7898321_youtube-social-dark-circle-youtube-white-icon-png.png);
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        #icon3{
+            height : 25px;
+            width : 25px;
+            /* border  : 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTOSRiTuIRegyFjQRglUqeW9MgI1V2cqxtvKtZlkk&s);
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        #icon4{
+            height : 25px;
+            width : 25px;
+            /* border  : 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-position: center;
+            background-size: cover;
+            background-image: url(./images/iconPLflag-03.svg);
+            margin-left: 30px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        #sec1_content{
+            height : 100px;
+            width : 550px;
+            /* border : 1px solid white; */
+            margin-left: 400px;
+            padding: 1px;
+            margin-top: 130px;
+        }
+        #sec1_head{
+            text-align: center;
+            color : rgb(82,128,228);
+            font-size: 27px;
+        }
+        #sec1_head2{
+            text-align: center;
+            color : white;
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: 100;
+        }
+        #sec1bottom{
+            margin-top: 300px;
+            margin-left: 1305px;
+            height : 50px;
+            width : 60px;
+            background-color: white;
+            border-radius: 3px;
+            position: fixed;
+        }
+        .section2{
+            height : 455vh;
+            width : 100%;
+            border : 1px solid;
+        }
+        .sec2box{
+            height : 370px;
+            width : 1200px;
+            border : 1px solid rgb(153,153,153);
+            margin-left: 80px;
+            margin-top: 80px;
+            padding: 1px;
+        }
+        #box1{
+            height : 368px;
+            width : 450px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/1500835_789050451122048_35941015_o-1080x675.jpg);
+            background-position: center;
+            background-size: 100% 100%;
+        }
+        #box2{
+            height : 100px;
+            width : 250px;
+            /* border : 1px solid; */
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 50px;
+        }
+        #box1_head1{
+            color : rgb(82,128,228)
+        }
+        #box1_head2{
+            margin-top: 20px;
+            color : rgb(153,153,153)
+        }
+        #box3{
+            height : 368px;
+            width : 450px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/WieslawCena_DominikPunda_FlarisLar1_2-766x675.jpg);
+            background-position: center;
+            background-size: 100% 100%;
+        }
+        #box4{
+            height : 100px;
+            width : 250px;
+            /* border : 1px solid; */
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 50px;
+        }
+        #box4_head1{
+            color : rgb(82,128,228)
+        }
+        #box4_head2{
+            margin-top: 20px;
+            color : rgb(153,153,153)
+        }
+        #box4_para{
+            width: 700px;
+            height : 40px;
+            /* border : 1px solid; */
+            margin-top: 20px;
+            color : rgb(153,153,153)
+        }
+        #box5{
+            height : 368px;
+            width : 450px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/Flaris-na-targach-2-1024x675.jpeg);
+            background-position: center;
+            background-size: 100% 100%;
+        }
+        #box6{
+            height : 100px;
+            width : 350px;
+            /* border : 1px solid; */
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 50px;
+        }
+        #box6_head1{
+            color : rgb(82,128,228)
+        }
+        #box6_head2{
+            margin-top: 20px;
+            color : rgb(153,153,153)
+        }
+        #box6_para{
+            width: 700px;
+            height : 40px;
+            /* border : 1px solid; */
+            margin-top: 20px;
+            color : rgb(153,153,153)
+        }
+        #box7{
+            height : 368px;
+            width : 450px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/Flaris-na-targach-1-1080x675.jpeg);
+            background-position: center;
+            background-size: 100% 100%;
+        }
+        #box8{
+            height : 100px;
+            width : 450px;
+            /* border : 1px solid; */
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 50px;
+        }
+        #box8_head1{
+            color : rgb(82,128,228)
+        }
+        #box8_head2{
+            margin-top: 20px;
+            color : rgb(153,153,153)
+        }
+        #box8_para{
+            width: 700px;
+            height : 40px;
+            /* border : 1px solid; */
+            margin-top: 20px;
+            color : rgb(153,153,153)
+        }
+        #box9{
+            height : 368px;
+            width : 450px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/Flaris-Mistrzowstwa-Swiata-Modelarstwa_1-1080x675.jpeg);
+            background-position: center;
+            background-size: 100% 100%;
+        }
+        #box10{
+            height : 100px;
+            width : 450px;
+            /* border : 1px solid; */
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 50px;
+        }
+        #box10_head1{
+            color : rgb(82,128,228)
+        }
+        #box10_head2{
+            margin-top: 20px;
+            color : rgb(153,153,153)
+        }
+        #box10_para{
+            width: 700px;
+            height : 40px;
+            /* border : 1px solid; */
+            margin-top: 20px;
+            color : rgb(153,153,153)
+        }
+        #box11{
+            height : 368px;
+            width : 450px;
+            /* border : 1px solid; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/maciejchyra_com-5DS_0089-scaled-1-1080x675.jpg);
+            background-position: center;
+            background-size: 100% 100%;
+        }
+        #box12{
+            height : 100px;
+            width : 720px;
+            /* border : 1px solid; */
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 50px;
+        }
+        #box12_head1{
+            color : rgb(82,128,228)
+        }
+        #box12_head2{
+            margin-top: 20px;
+            color : rgb(153,153,153)
+        }
+        #box12_para{
+            width: 700px;
+            height : 40px;
+            /* border : 1px solid; */
+            margin-top: 20px;
+            color : rgb(153,153,153)
+        }
+        #sec2_btn{
+            height : 45px;
+            width : 100px;
+            border : 1px solid;
+            background-color:  rgb(82,128,228);
+            color : white;
+            border-radius: 10px;
+            margin-left: 1180px;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+        #sec2_btn:hover{
+            background-color : rgba(82, 128, 228, 0.692)
+        }
+        .section3{
+            height : 70vh;
+            width : 100%;
+            border : 1px solid;
+            padding: 1px;
+            background-color: rgb(0,18,43);
+        }
+        #sec3_box1{
+            height : 200px;
+            width : 500px;
+            /* border : 1px solid white; */
+            margin-top: 60px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 150px;
+            padding: 1px;
+        }
+        #sec3_box2{
+            height : 230px;
+            width : 500px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 50px;
+            padding: 1px;
+        }
+        #sec3_box3{
+            height : 150px;
+            width : 1060px;
+            /* border : 1px solid white; */
+            margin-left: 150px;
+            padding: 1px;
+        }
+        #sec3b1_cube1{
+            height : 180px;
+            width : 160px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 3px;
+            padding: 1px;
+        }
+        #sec3b1_cube2{
+            height : 180px;
+            width : 160px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+        }
+        #sec3b1_cube3{
+            height : 180px;
+            width : 160px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+        }
+        #sec3c1_head{
+            color : white;
+            margin-left: 5px;
+            
+        }
+        #nav_bar1{
+            height : 140px;
+            width : 120px;
+            /* border : 1px solid white; */
+            margin-top: 10px;
+            
+        }
+        #list4{
+            list-style: none;
+            color :  rgb(185, 185, 211);
+            cursor: pointer;
+            
+        }
+        #nav4_ul{
+            margin-left: 5px;
+            line-height: 30px;
+            font-size: small;
+            margin-top: 10px;
+        }
+        #sec3c2_head{
+            color : white;
+            margin-left: 5px;
+            
+        }
+        #nav_bar2{
+            height : 140px;
+            width : 120px;
+            /* border : 1px solid white; */
+            margin-top: 20px;
+            
+        }
+        #list2{
+            list-style: none;
+            color :  rgb(185, 185, 211);
+            cursor: pointer;
+
+        }
+        #nav2_ul{
+            /* margin-left: -15px; */
+            line-height: 30px;
+            font-size: small;
+        }
+        #sec3c3_head{
+            color : white;
+            margin-left: 5px;
+            
+        }
+        #nav_bar3{
+            height : 140px;
+            width : 120px;
+            /* border : 1px solid white; */
+            margin-top: 20px;
+            
+        }
+        #list3{
+            list-style: none;
+            color :  rgb(185, 185, 211);
+            cursor: pointer;
+
+        }
+        #nav3_ul{
+            /* margin-left: -15px; */
+            line-height: 30px;
+            font-size: small;
+        }
+        #sec3b2_head{
+            color : white
+        }
+        #form7{
+            height : 50px;
+            width : 400px;
+            border-radius: 8px;
+            margin-top: 10px;
+
+        }
+        #sec3b2_btn{
+            height : 50px;
+            width : 400px;
+            border-radius: 8px;
+            margin-top: 10px;
+            border : 2px solid white;
+            background-color: transparent;
+            color : white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        #sec3b2_btn:hover{
+            background-color: rgba(0, 0, 255, 0.24);
+            border : transparent
+        }
+        #sec3b2_head2{
+            color : white;
+            margin-top: 20px;
+        }
+        #sec3b3_box1{
+            height : 40px;
+            width : 140px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            margin-top: 15px;
+            background-position: center;
+            background-size: cover;
+        }
+        #sec3b3_box2{
+            height : 2px;
+            width : 1057px;
+            /* border : 1px solid; */
+            background-color:rgb(0,170,255) ;
+            margin-top: 10px;
+            padding: 1px;
+        }
+        #sec3b3_box3{
+            height : 25px;
+            width : 250px;
+            /* border : 1px solid white; */
+            margin-top: 20px;
+            padding: 1px;
+        }
+        #sec3b3_box4{
+            height : 40px;
+            width : 90px;
+            /* border : 1px solid white; */
+            margin-left: 965px;
+            margin-top: -30px;
+            padding: 1px;
+        }
+        #sec3b3b4_box1{
+            height : 25px;
+            width : 25px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(https://toppng.com/uploads/preview/facebook-black-white-icon-facebook-face-book-png-facebook-icon-for-footer-11562873944v8l8yjbnby.png);
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+        }
+        #sec3b3b4_box2{
+            height : 25px;
+            width : 25px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(https://www.seekpng.com/png/detail/789-7898321_youtube-social-dark-circle-youtube-white-icon-png.png);
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+        }
+        #sec3b3b4_box3{
+            height : 25px;
+            width : 25px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTOSRiTuIRegyFjQRglUqeW9MgI1V2cqxtvKtZlkk&s) ;
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+        }
+        #sec3b3_head{
+            color : rgb(102,102,125)
+        }
+
+            
+    </style>
+</head>
+<body>
+    <div class = "section1">
+        
+        <nav id = "nav_bar">
+            <div id = "logo">
+                <img src="./images/logoFlarisSVG.svg" alt="">
+            </div>
+            <ul id = "nav_ul">
+                <li id = "list">AIRCRAFT</li>
+                <li id = "list">PILOTING COURSES</li>
+                <li id = "list">PURCHASE</li>
+                <li id = "list">NEWS</li>
+                <li id = "list">OUR STORY</li>
+                <li id = "list">PRESS ROOM</li>
+                <li id = "list">CONTACT</li>
+            </ul>
+            <div id = "icon1">
+                <a href="https://www.facebook.com/" target="_blank"></a>
+            </div>
+            <div id = "icon2">
+                <a href="https://www.youtube.com/" target="_blank"></a>
+            </div>
+            <div id = "icon3">
+                <a href="https://www.instagram.com/" target="_blank"></a>
+            </div>
+            <div id = "icon4"></div>
+        </nav>
+        <div id = "sec1_content">
+            <h2 id = "sec1_head">› FLARIS ‹</h2>
+            <h2 id = "sec1_head2">NEWS AND PRESS RELEASES</h2>
+        </div>
+        <div id = "sec1bottom">
+            <img src="./images/logo_48.png" alt="">
+        </div>
+    </div>
+    <div class = "section2">
+        <div class = "sec2box">
+            <div id = "box1">
+                
+            </div>
+            <div id = "box2">
+                <h3 id = "box2_head1">Merry Christmas</h3>
+                <h5 id = "box2_head2">gru 23, 2022</h5>
+            </div>
+        </div>
+        <div class = "sec2box b1">
+            <div id = "box3"></div>
+            <div id = "box4">
+                <h3 id = "box4_head1">Two pilots aboard Flaris</h3>
+                <h5 id = "box4_head2">wrz 15, 2022</h5>
+                <p id = "box4_para">Today, for the first time, the FLARIS LAR 1 plane had two test pilots on board! Wieslaw Cena and <br>Dominik Punda (both in the photos) sat at the controls. They performed five 10-minute flights.</p>
+            </div>
+        </div>
+        <div class = "sec2box b2">
+            <div id = "box5"></div>
+            <div id = "box6">
+                <h3 id = "box6_head1">Flaris at the MSPO Exhibition in Kielce!</h3>
+                <h5 id = "box6_head2">wrz 12, 2022</h5>
+                <p id = "box6_para">Fans of the FLARIS LAR 1 passenger business jet had the opportunity to get acquainted with what it offers during the XXX MSPO International Defense Industry Exhibition, which took place from 6 to 9 September 2022 in Kielce.</p>
+            </div>
+        </div>
+        <div class = "sec2box b3">
+            <div id = "box7"></div>
+            <div id = "box8">
+                <h3 id = "box6_head1">Flaris will be at the MSPO Exhibition in Kielce!
+                </h3>
+                <h5 id = "box6_head2">wrz 3, 2022</h5>
+                <p id = "box6_para">Fans of the FLARIS LAR 1 passenger business jet will have the opportunity to get acquainted with <br>what it offers during the XXX International Defense Industry Exhibition MSPO, which will take <br>place from 6 to 9 September 2022 in Kielce.</p>
+            </div>
+        </div>
+        <div class = "sec2box b4">
+            <div id = "box9"></div>
+            <div id = "box10">
+                <h3 id = "box6_head1">Flaris-sponsored athlete on the podium</h3>
+                <h5 id = "box6_head2">sie 13, 2022</h5>
+                <p id = "box6_para">In the FAI World Championships for Control Line Model Aircraft for Seniors and Juniors<br> in Wloclawek, an athlete sponsored by the manufacturer of the FLARIS LAR 1 aircraft won 2nd<br> place. Her name is Nandintsetseg Nomin and she is from Mongolia.</p>
+            </div>
+        </div>
+        <div class = "sec2box b5">
+            <div id = "box11"></div>
+            <div id = "box12">
+                <h3 id = "box6_head1">FLARIS LAR 1 MOVIE PREMIERE: JET TAKE OFF, FLIGHT, AND LANDING</h3>
+                <h5 id = "box6_head2">paź 1, 2021</h5>
+                <p id = "box6_para">Today, a video featuring the world’s fastest single-engine business jet, the Flaris Lar 1, was <br>released for the first time on YouTube…
+
+                </p>
+            </div>
+        </div>
+        <button id = "sec2_btn">All Post</button>
+    </div>
+    <div class = "section3">
+        
+        <div id = "sec3_box1">
+            <div id = "sec3b1_cube1">
+                <h5 id = "sec3c1_head">Legal</h5>
+                <nav id = "nav_bar1">
+                    <ul id = "nav4_ul">
+                        <li id = "list4">GDPR</li>
+                        <li id = "list4">Privacy policy</li>
+                        <li id = "list4">Cookies</li>
+                    </ul>
+                </nav>
+            </div>
+            <div id = "sec3b1_cube2">
+                <h5 id = "sec3c2_head">About</h5>
+                <nav id = "nav_bar2">
+                    <ul id = "nav2_ul">
+                        <li id = "list2">Press room</li>
+                        <li id = "list2">Manufacturer</li>
+                            
+                    </ul>
+                </nav>
+            </div>
+            <div id = "sec3b1_cube3">
+                <h5 id = "sec3c3_head">Informations</h5>
+                <nav id = "nav_bar3">
+                    <ul id = "nav3_ul">
+                        <li id = "list3">FAQ</li>
+                        <li id = "list3">News</li>
+                            
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id = "sec3_box2">
+            <h2 id = "sec3b2_head">Sign up to our newsletter</h2>>
+            <form action = "">
+                <input id = "form7" type="e-mail" placeholder = "e-mail"><br>
+                <button id = "sec3b2_btn">Sign up</button>
+                <h5 id = "sec3b2_head2">Form protected by reCAPTCHA and Google</h5>
+            </form>
+        </div>
+        <div id = "sec3_box3">
+            <div id = "sec3b3_box1">
+                <img src="./images/LOGO_FLARIS_white-1.png" alt="">
+            </div>
+            <div id = "sec3b3_box2"></div>
+            <div id = "sec3b3_box3">
+                <h5 id = "sec3b3_head">© 2022 Flaris. All rights reserved.</h5>
+            </div>
+            <div id = "sec3b3_box4">
+                <div id = "sec3b3b4_box1"></div>
+                <div id = "sec3b3b4_box2"></div>
+                <div id = "sec3b3b4_box3"></div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+</body>
+</html>

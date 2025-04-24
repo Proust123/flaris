@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index_5</title>
+
+    <style>
+        *{
+            margin : 0%;
+            padding :0%;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .section1{
+            height : 100vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+            background-image: url(./images/Flaris_PURCHASE2-min.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+        }
+        #nav_bar{
+            height : 110px;
+            width : 100%;
+            /* border : 1px solid white; */
+            padding: 1px;
+            background-color: rgba(0, 0, 0, 0.705);
+            position: fixed;
+
+        }
+        #logo{
+            height : 60px;
+            width : 170px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-position: center;
+            background-size: cover;
+            margin-top: 30px;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+        #nav1_ul{
+            height : 50px;
+            width : 830px;
+            /* border : 1px solid white; */
+            padding : 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 30px;
+            margin-left: 100px;
+        }
+        #list1{
+            color : white;
+            list-style: none;
+            display: inline;
+            margin : 20px;
+            padding: 1px;
+            cursor: pointer;
+        }
+        #icon1{
+            height : 25px;
+            width : 25px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 30px;
+            margin-top: 30px;
+            cursor: pointer;
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://toppng.com/uploads/preview/facebook-black-white-icon-facebook-face-book-png-facebook-icon-for-footer-11562873944v8l8yjbnby.png);
+        }
+        #icon2{
+            height : 25px;
+            width : 25px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 30px;
+            cursor: pointer;
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://www.seekpng.com/png/detail/789-7898321_youtube-social-dark-circle-youtube-white-icon-png.png);
+        }
+        #icon3{
+            height : 25px;
+            width : 25px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 30px;
+            cursor: pointer;
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTOSRiTuIRegyFjQRglUqeW9MgI1V2cqxtvKtZlkk&s);
+        }
+        #img1{
+            height : 30px;
+            width : 30px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 25px;
+            margin-top: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            background-position: center;
+            background-size: cover;
+            background-image: url(./images/iconPLflag-03.svg);
+        }
+        #sec1_content{
+            height : 150px;
+            width : 800px;
+            /* border : 1px solid white; */
+            margin-left: 300px;
+            margin-top: 120px;
+            padding : 1px
+        }
+        #sec1_head{
+            color : white;
+            text-align: center;
+            margin-top: 30px;
+            font-weight: 100;
+            color : rgb(0,170,255)
+        }
+        #sec1_head2{
+            color : white;
+            text-align: center;
+            margin-top: 40px;
+            font-weight: 100;
+        }
+        #sec1bottom{
+            height : 50px;
+            width : 75px;
+            /* border : 1px solid white; */
+            border-radius: 5px;
+            margin-left: 1272px;
+            margin-top: 280px;
+            background-position: center;
+            background-size: 100% 100%;
+            background-color: white;
+            cursor: pointer;
+            position: fixed;
+        }
+        .section2{
+            height : 385vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding : 1px;
+        }
+        #sec2_content{
+            height : 150px;
+            width : 700px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin-left: 300px;
+            margin-top: 80px;
+        }
+        #sec2_head{
+            text-align: center;
+            font-weight: 100;
+        }
+        #sec2_para{
+            text-align: center;
+            color : rgba(0, 0, 0, 0.678);
+            margin-top: 20px;
+            line-height: 25px;
+        }
+        .sec2_box{
+            height : 400px;
+            width : 650px;
+            border : 1px solid;
+            padding : 1px;
+            margin-top: 50px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 100px;
+            background-image: url(./images/290611577_139287222101890_6790155899189441362_n.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .b1{
+            height : 600px;
+            width : 420px;
+            background-image:none;
+            border : 1px solid  rgba(0, 0, 0, 0.233);
+            
+        }
+        #sec2b1_head{
+            margin-top: 90px;
+            margin-left: 50px;
+        }
+        #sec2b1_para{
+            margin-top: 30px;
+            margin-left: 50px;
+            color :  rgba(0, 0, 0, 0.678);
+            line-height: 30px;
+        }
+        .b2{
+            height : 300px;
+            width : 420px;
+            background-image:none;
+            border : 1px solid  rgba(0, 0, 0, 0.233);
+        }
+        #sec2b2_head{
+            margin-top: 90px;
+            margin-left: 50px;
+        }
+        #sec2b2_para{
+            margin-top: 30px;
+            margin-left: 50px;
+            color :  rgba(0, 0, 0, 0.678);
+            line-height: 30px;
+        }
+        .b3{
+            background-image: url(./images/292156281_1149526388938148_35375259042819739_n-1.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .b4{
+            height : 400px;
+            background-image: url(./images/nasza_historia.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+        .b5{
+            height : 400px;
+            width : 420px;
+            background-image:none;
+            border : 1px solid  rgba(0, 0, 0, 0.233);
+        }
+        #sec2b5_head{
+            margin-top: 90px;
+            margin-left: 50px;
+        }
+        #sec2b5_para{
+            margin-top: 30px;
+            margin-left: 50px;
+            color :  rgba(0, 0, 0, 0.678);
+            line-height: 30px;
+        }
+        .b6{
+            height : 500px;
+            width : 420px;
+            background-image:none;
+            border : 1px solid  rgba(0, 0, 0, 0.233);
+        }
+        #sec2b6_head{
+            margin-top: 90px;
+            margin-left: 50px;
+        }
+        #sec2b6_para{
+            margin-top: 30px;
+            margin-left: 50px;
+            color :  rgba(0, 0, 0, 0.678);
+            line-height: 30px;
+        }
+        .b7{
+            height : 500px;
+            background-image: url(./images/zalety_wygoda.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .section3{
+            height : 80vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+            background-color: rgb(30,30,30);
+            background-image: url(./images/enface-4.png);
+            background-position: right;
+            background-size: cover;
+        }
+        #sec3_box{
+            height : 450px;
+            width : 600px;
+            /* border : 1px solid white; */
+            margin-left: 720px;
+            margin-top: 25px;
+        }
+        #sec3box_content{
+            height : 200px;
+            width : 500px;
+            /* border : 1px solid white; */
+            margin-left: 50px;
+            margin-top: 70px;
+            padding: 1px;
+
+        }
+        #sec3box_head{
+            color : white
+        }
+        #sec3box_para{
+            color : white;
+            margin-top: 60px;
+            margin-left: 15px;
+            line-height: 22px;
+        }
+        #sec3box_btn{
+            height : 50px;
+            width : 180px;
+            margin-left:200px;
+            margin-top: 50px;
+            padding: 1px;
+            background-color: transparent;
+            color :rgb(0,170,255) ;
+            border : 1px solid  rgb(0,170,255);
+            font-size: 15px;
+            font-weight: 700;
+            cursor : pointer
+        }
+        #sec3box_btn:hover{
+            color : white;
+            border : 1px solid transparent;
+            background-color: rgb(0,170,255);
+        }
+        .section4{
+            height : 80vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+            background-color: rgb(30,30,30);
+            
+        }
+        #sec4_box1{
+            height : 495px;
+            width : 750px;
+            /* border: 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        #sec4_box2{
+            height : 495px;
+            width : 590px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+            background-image: url(./images/leasing.png);
+            background-position: center;
+            background-size: cover;
+        }
+        #sec4b1_content{
+            height : 200px;
+            width : 500px;
+            /* border : 1px solid white; */
+            margin-left: 120px;
+            margin-top: 70px;
+            padding: 1px;
+
+        }
+        #sec4b1_head{
+            color : white;
+            text-align: center;
+        }
+        #sec4b1_para{
+            color : white;
+            margin-top: 60px;
+            margin-left: 15px;
+            line-height: 22px;
+        }
+        #sec4b1_btn{
+            height : 50px;
+            width : 180px;
+            margin-left:280px;
+            margin-top: 50px;
+            padding: 1px;
+            background-color: transparent;
+            color :rgb(0,170,255) ;
+            border : 1px solid  rgb(0,170,255);
+            font-size: 15px;
+            font-weight: 700;
+            cursor : pointer
+        }
+        #sec4b1_btn:hover{
+            color : white;
+            border : 1px solid transparent;
+            background-color: rgb(0,170,255);
+        }
+        .section5{
+            height : 80vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+            background-color: rgb(30,30,30);
+        }
+        #sec5_box1{
+            height : 495px;
+            width : 590px;
+            /* border: 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/wynajem.png);
+            background-position: center;
+            background-size: cover;
+        }
+        #sec5_box2{
+            height : 495px;
+            width : 750px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+            
+        }
+        #sec5b2_content{
+            height : 200px;
+            width : 500px;
+            /* border : 1px solid white; */
+            margin-left: 50px;
+            margin-top: 70px;
+            padding: 1px;
+
+        }
+        #sec5b2_head{
+            color : white
+        }
+        #sec5b2_para{
+            color : white;
+            margin-top: 60px;
+            margin-left: 15px;
+            line-height: 22px;
+        }
+        #sec5b2_btn{
+            height : 50px;
+            width : 180px;
+            margin-left:200px;
+            margin-top: 50px;
+            padding: 1px;
+            background-color: transparent;
+            color :rgb(0,170,255) ;
+            border : 1px solid  rgb(0,170,255);
+            font-size: 15px;
+            font-weight: 700;
+            cursor : pointer
+        }
+        #sec5b2_btn:hover{
+            color : white;
+            border : 1px solid transparent;
+            background-color: rgb(0,170,255);
+        }
+        .section6{
+            height : 165vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        #sec6_box1{
+            height : 155vh;
+            width : 600px;
+            /* border : 1px solid; */
+            background-image: url(./images/masz_pytania_filtr.jpg);
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+        }
+        #sec6_box2{
+            height : 165vh;
+            width : 740px;
+            /* border : 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+        }
+        #sec6b2_content{
+            height: 150vh;
+            width : 630px;
+            /* border : 1px solid; */
+            margin-left: 100px;
+            margin-top: 80px;
+            padding: 1px;
+        }
+        #sec6b2con_head{
+            font-size: 25px;
+            color : rgba(0, 0, 0, 0.678)
+        }
+        #form1{
+            height : 50px;
+            width : 300px;
+            margin-top: 60px;
+            border-radius: 3px;
+            border : 1px solid rgba(0, 0, 0, 0.363);
+            padding : 10px
+        }#form2{
+            margin-top: 20px;
+            height : 50px;
+            width : 300px;
+            border-radius: 3px;
+            border : 1px solid rgba(0, 0, 0, 0.363);
+            padding : 10px;
+        }
+        #sec6b2con_para{
+            margin-top: 20px;
+            color :  1px solid rgba(0, 0, 0, 0.363);
+            font-size: 18px;
+            font-weight: 600;
+        }
+        #type1{
+            margin-top: 20px;
+            color : rgba(0, 0, 0, 0.363);
+        }
+        #form3{
+            margin-top: 20px;
+            height : 180px;
+            width : 605px;
+            margin-top: 60px;
+            border-radius: 3px;
+            border : 1px solid rgba(0, 0, 0, 0.363);
+            padding : 10px
+        }
+        #form4{
+            height : 50px;
+            width : 605px;
+            margin-top: 20px;
+            border-radius: 3px;
+            border : 1px solid rgba(0, 0, 0, 0.363);
+            padding : 10px
+        }
+        #form5{
+            height : 50px;
+            width : 605px;
+            margin-top: 20px;
+            border-radius: 3px;
+            border : 1px solid rgba(0, 0, 0, 0.363);
+            padding : 10px
+        }
+        #form6{
+            height : 180px;
+            width : 605px;
+            margin-top: 20px;
+            border-radius: 3px;
+            border : 1px solid rgba(0, 0, 0, 0.363);
+            padding : 10px
+        }
+        #sec6_btn{
+            height : 50px;
+            width : 100px;
+            margin-top: 10px;
+            margin-left: 506px;
+            background-color: transparent;
+            color :  rgb(0,170,255);
+            border : 1px solid  rgb(0,170,255);
+            cursor: pointer;
+        }
+        #sec6_btn:hover{
+            color : rgba(0, 0, 0, 0.363);
+            background-color: rgba(0, 0, 0, 0.205);
+        }
+        .section7{
+            height : 70vh;
+            width : 100%;
+            border : 1px solid;
+            padding: 1px;
+            background-color: rgb(0,18,43);
+        }
+        #sec7_box1{
+            height : 200px;
+            width : 500px;
+            /* border : 1px solid white; */
+            margin-top: 60px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 150px;
+            padding: 1px;
+        }
+        #sec7_box2{
+            height : 230px;
+            width : 500px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 50px;
+            padding: 1px;
+        }
+        #sec7_box3{
+            height : 150px;
+            width : 1060px;
+            /* border : 1px solid white; */
+            margin-left: 150px;
+            padding: 1px;
+        }
+        #sec7b1_cube1{
+            height : 180px;
+            width : 160px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 3px;
+            padding: 1px;
+        }
+        #sec7b1_cube2{
+            height : 180px;
+            width : 160px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+        }
+        #sec7b1_cube3{
+            height : 180px;
+            width : 160px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+        }
+        #sec7c1_head{
+            color : white;
+            margin-left: 5px;
+            
+        }
+        #nav_bar1{
+            height : 140px;
+            width : 120px;
+            /* border : 1px solid white; */
+            margin-top: 10px;
+            
+        }
+        #list4{
+            list-style: none;
+            color :  rgb(185, 185, 211);
+            cursor: pointer;
+            
+        }
+        #nav4_ul{
+            margin-left: 5px;
+            line-height: 30px;
+            font-size: small;
+            margin-top: 10px;
+        }
+        #sec7c2_head{
+            color : white;
+            margin-left: 5px;
+            
+        }
+        #nav_bar2{
+            height : 140px;
+            width : 120px;
+            /* border : 1px solid white; */
+            margin-top: 20px;
+            
+        }
+        #list2{
+            list-style: none;
+            color :  rgb(185, 185, 211);
+            cursor: pointer;
+
+        }
+        #nav2_ul{
+            /* margin-left: -15px; */
+            line-height: 30px;
+            font-size: small;
+        }
+        #sec7c3_head{
+            color : white;
+            margin-left: 5px;
+            
+        }
+        #nav_bar3{
+            height : 140px;
+            width : 120px;
+            /* border : 1px solid white; */
+            margin-top: 20px;
+            
+        }
+        #list3{
+            list-style: none;
+            color :  rgb(185, 185, 211);
+            cursor: pointer;
+
+        }
+        #nav3_ul{
+            /* margin-left: -15px; */
+            line-height: 30px;
+            font-size: small;
+        }
+        #sec7b2_head{
+            color : white
+        }
+        #form7{
+            height : 50px;
+            width : 400px;
+            border-radius: 8px;
+            margin-top: 10px;
+
+        }
+        #sec7b2_btn{
+            height : 50px;
+            width : 400px;
+            border-radius: 8px;
+            margin-top: 10px;
+            border : 2px solid white;
+            background-color: transparent;
+            color : white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        #sec7b2_btn:hover{
+            background-color: rgba(0, 0, 255, 0.24);
+            border : transparent
+        }
+        #sec7b2_head2{
+            color : white;
+            margin-top: 20px;
+        }
+        #sec7b3_box1{
+            height : 40px;
+            width : 140px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            margin-top: 15px;
+            background-position: center;
+            background-size: cover;
+        }
+        #sec7b3_box2{
+            height : 2px;
+            width : 1057px;
+            /* border : 1px solid; */
+            background-color:rgb(0,170,255) ;
+            margin-top: 10px;
+            padding: 1px;
+        }
+        #sec7b3_box3{
+            height : 25px;
+            width : 250px;
+            /* border : 1px solid white; */
+            margin-top: 20px;
+            padding: 1px;
+        }
+        #sec7b3_box4{
+            height : 40px;
+            width : 90px;
+            /* border : 1px solid white; */
+            margin-left: 965px;
+            margin-top: -30px;
+            padding: 1px;
+        }
+        #sec7b3b4_box1{
+            height : 25px;
+            width : 25px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(https://toppng.com/uploads/preview/facebook-black-white-icon-facebook-face-book-png-facebook-icon-for-footer-11562873944v8l8yjbnby.png);
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+        }
+        #sec7b3b4_box2{
+            height : 25px;
+            width : 25px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(https://www.seekpng.com/png/detail/789-7898321_youtube-social-dark-circle-youtube-white-icon-png.png);
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+        }
+        #sec7b3b4_box3{
+            height : 25px;
+            width : 25px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTOSRiTuIRegyFjQRglUqeW9MgI1V2cqxtvKtZlkk&s) ;
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+        }
+        #sec7b3_head{
+            color : rgb(102,102,125)
+        }
+    </style>
+</head>
+<body>
+    <div class = "section1">
+        <nav id = "nav_bar">
+            <div id = "logo">
+                <img src="./images/logoFlarisSVG.svg" alt="">
+            </div>
+            <ul id = "nav1_ul">
+                <li id = "list1">Aircraft</li>
+                <li id = "list1">Piloting Courses</li>
+                <li id = "list1">Purchase</li>
+                <li id = "list1">News</li>
+                <li id = "list1">Our Story</li>
+                <li id = "list1">Press Room</li>
+                <li id = "list1">Contact</li>
+            </ul>
+            <div id = "icon1">
+                <a href="https://www.facebook.com/" target="_blank"></a>
+            </div>
+            <div id = "icon2">
+                <a href="https://www.youtube.com/" target="_blank"></a>
+            </div>
+            <div id = "icon3">
+                <a href="https://www.instagram.com/" target="_blank"></a>
+            </div>
+            <div id = "img1"></div>
+        </nav>
+        <div id = "sec1_content">
+            <h1 id = "sec1_head">› PURCHASE, LEASING, OR SHARING ‹</h1>
+            <h1 id = "sec1_head2">CHOOSE YOUR WAY OF USING THE LAR 01</h1>
+        </div>
+        <div id = "sec1bottom">
+            <img src="./images/logo_48.png" alt="">
+        </div>
+    </div>
+    <div class = "section2">
+        <div id = "sec2_content">
+            <h1 id = "sec2_head">› AN EXCEPTIONAL ALTERNATIVE ‹</h1>
+            <p id = "sec2_para">Nowadays, time is extremely valuable. FLARIS LAR 1 goes to war with long and tiring travels and <br>baggage claims. It is an answer to the challenges of modern transportation. It is an alternative <br>to congested highways and cruise flights.</p>
+        </div>
+        <div class = "sec2_box"></div>
+        <div class = "sec2_box b1">
+            <h2 id = "sec2b1_head">Independence</h2>
+            <p id = "sec2b1_para">You gain a new dimension of freedom <br>by investing in LAR 01. Thanks to its ability <br>to operate on grass airstrips, Flaris allows <br>you to avoid large airports and get closer <br>to your destination point. There are over<br> 10,000 aeroclubs and 45,000 grass airstrips <br>in the world. Flaris needs just 200 m of <br>paved runway to takeoff and 250 m to land.<br> We have 124 airstrips and 62 civilian airports<br> in Poland, according to the Register of <br>Aerodromes and Airstrips (ULC) as of the 5th<br> of April 2019.</p>
+        </div>
+        <div class = "sec2_box b2">
+            <h2 id = "sec2b2_head">The Earth becomes smaller</h2>
+            <p id = "sec2b2_para">Such flexibility is not achievable with any<br> other jet aircraft in the world.</p>
+        </div>
+        <div class = "sec2_box b3"></div>
+        <div class = "sec2_box b4"></div>
+        <div class = "sec2_box b5">
+            <h2 id = "sec2b5_head">Economy</h2>
+            <p id = "sec2b5_para">LAR 01 is unparalleled in terms of purchase<br> and exploitation costs. Operating cost: 1,2<br> $/nm, or 450 $/hour.</p>
+        </div>
+        <div class = "sec2_box b6">
+            <h2 id = "sec2b6_head">Convenience</h2>
+            <p id = "sec2b6_para">LAR 01 meets the communication needs of <br>the business world. It will quickly and <br>comfortably get you to any destination. It is <br>an option for private individuals who value <br>their time and the comfort of travel as well.<br> Taking off from aeroclub airstrips allows you <br>to save the time spent on getting to the <br>airport and customs procedures. You will<br> also land closer to your destination.</p>
+        </div>
+        <div class = "sec2_box b7"></div>
+        
+    </div>
+    <div class = "section3">
+        <div id = "sec3_box">
+            <div id = "sec3box_content">
+                <h2 id = "sec3box_head">› PURCHASE</h2>
+                <p id = "sec3box_para">Purchasing LAR 01 is the most complete and apparent way to own <br>an aircraft. It is especially popular among corporate clientele, <br>service groups and medium-sized companies, and individual <br>clients. In many countries, such investment can be amortised <br>through advantageous tax deductions.</p>
+            </div>
+            <button id = "sec3box_btn">Learn More ></button>
+        </div>
+    </div>
+    <div class = "section4">
+        <div id = "sec4_box1">
+            <div id = "sec4b1_content">
+                <h2 id = "sec4b1_head">› LEASING</h2>
+
+                <p id = "sec4b1_para">A form of usage attractive to companies that do not want to or are <br>not able to purchase a jet. Leasing allows using the LAR 01 <br>in a periodic payment system. After a fixed period, it is possible<br> to acquire the aircraft and include it into the assets of your<br> company.</p>
+            </div>
+            <button id = "sec4b1_btn">Learn More ></button>
+        </div>
+        
+        <div id = "sec4_box2"></div>
+    </div>
+    <div class = "section5">
+        <div id = "sec5_box1"></div>
+        <div id = "sec5_box2">
+            <div id = "sec5b2_content">
+                <h2 id = "sec5b2_head">› RENTAL</h2>
+
+                <p id = "sec5b2_para">An ideal option for corporate and individual clients who only occasionally use private aircraft transport. It is possible to pilot the jet or use the services of professional pilots, depending on the qualifications of the client. In the latter case, rental resembles an <br>air taxi service.<br>.</p>
+            </div>
+            <button id = "sec5b2_btn">Learn More ></button>
+        </div>
+    
+    </div>
+    <div class  = "section6">
+        <div id = "sec6_box1"></div>
+        <div id = "sec6_box2">
+            <div id = "sec6b2_content">
+                <h2 id = "sec6b2con_head">› FILL OUT THE CONTACT FORM:</h2>
+                <form action = "">
+                    <input id = "form1" type="text" placeholder = "First Name">
+                    <input id = "form1" type="e-mail" placeholder = "E-mail"><br>
+                    <input id = "form2" type="text" placeholder = "Last Name">
+                    <input id = "form2" type="number" placeholder = "Phone Number">
+                    <p id = "sec6b2con_para">Are you a pilot?</p>
+                    <input id = "type1" name = "a" type="radio">Yes<br>
+                    <input id = "type1" name = "a" type="radio">No<br>
+                    <input id = "form3" type = "text" placeholder = "What are your qualifications?"><br>
+                    <input id = "form4" type = "text" placeholder = "Where would you like to operate the Flaris Aircraft?"><br>
+                    <input id = "form5" type = "text" placeholder = "Which purchase option you are interested in?"><br>
+                    <input id = "form6" type = "text" placeholder = "Your message">
+                </form>
+                <button id = "sec6_btn">Send</button>
+            </div>
+    
+        </div>
+        
+    </div>
+    <div class = "section7">
+        <div id = "sec7_box1">
+            <div id = "sec7b1_cube1">
+                <h5 id = "sec7c1_head">Legal</h5>
+                <nav id = "nav_bar1">
+                    <ul id = "nav4_ul">
+                        <li id = "list4">GDPR</li>
+                        <li id = "list4">Privacy policy</li>
+                        <li id = "list4">Cookies</li>
+                    </ul>
+                </nav>
+            </div>
+            <div id = "sec7b1_cube2">
+                <h5 id = "sec7c2_head">About</h5>
+                <nav id = "nav_bar2">
+                    <ul id = "nav2_ul">
+                        <li id = "list2">Press room</li>
+                        <li id = "list2">Manufacturer</li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div id = "sec7b1_cube3">
+                <h5 id = "sec7c3_head">Informations</h5>
+                <nav id = "nav_bar3">
+                    <ul id = "nav3_ul">
+                        <li id = "list3">FAQ</li>
+                        <li id = "list3">News</li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id = "sec7_box2">
+            <h2 id = "sec7b2_head">Sign up to our newsletter</h2>>
+            <form action = "">
+                <input id = "form7" type="e-mail" placeholder = "e-mail"><br>
+                <button id = "sec7b2_btn">Sign up</button>
+                <h5 id = "sec7b2_head2">Form protected by reCAPTCHA and Google</h5>
+            </form>
+        </div>
+        <div id = "sec7_box3">
+            <div id = "sec7b3_box1">
+                <img src="./images/LOGO_FLARIS_white-1.png" alt="">
+            </div>
+            <div id = "sec7b3_box2"></div>
+            <div id = "sec7b3_box3">
+                <h5 id = "sec7b3_head">© 2022 Flaris. All rights reserved.</h5>
+            </div>
+            <div id = "sec7b3_box4">
+                <div id = "sec7b3b4_box1"></div>
+                <div id = "sec7b3b4_box2"></div>
+                <div id = "sec7b3b4_box3"></div>
+            </div>
+        </div>
+    
+    </div>
+        
+</body>
+</html>

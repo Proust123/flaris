@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index_4</title>
+
+    <style>
+        *{
+            margin : 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .section1{
+            height : 100vh;
+            width : 100%;
+            padding : 1px ;
+            background-image: url(./images/Flaris_pilot-min.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        #navbar1{
+            height: 120px;
+            width : 100%;
+            /* border : 1px solid white; */
+            padding: 1px;
+            /* position: fixed; */
+            background-color: rgba(0, 0, 0, 0.733);
+        }
+        #logo{
+            height : 30px;
+            width : 120px;
+            /* border: 1px solid white; */
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 50px;
+            background-position: center;
+            background-size: cover;
+            margin-top: 30px;
+        }
+        #nav1_ul{
+            height : 30px;
+            width : 800px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+        #list1{
+            color : white;
+            list-style: none;
+            display: inline;
+            margin: 20px;
+            
+        } 
+        #icon1{
+            height : 25px;
+            width : 25px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 100px;
+            margin-top: 30px;
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://toppng.com/uploads/preview/facebook-black-white-icon-facebook-face-book-png-facebook-icon-for-footer-11562873944v8l8yjbnby.png);
+        }
+        #icon2{
+            height : 25px;
+            width : 25px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 30px;
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://www.seekpng.com/png/detail/789-7898321_youtube-social-dark-circle-youtube-white-icon-png.png);
+        }
+        #icon3{
+            height : 25px;
+            width : 25px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 30px;
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTOSRiTuIRegyFjQRglUqeW9MgI1V2cqxtvKtZlkk&s);
+        }
+        #icon4{
+            height : 30px;
+            width : 30px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 15px;
+            margin-top: 30px;
+            border-radius: 50%;
+            background-position: center;
+            background-size: cover;
+            background-image: url(./images/iconPLflag-03.svg);
+        }
+        #sec1_content{
+            height : 120px;
+            width : 500px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            margin-top: 170px;
+            margin-left: 420px;
+        }
+        #sec1_head1{
+            color :rgb(0,170,255);
+            text-align: center;
+        }
+        #sec1_head2{
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            font-weight: 100;
+            font-size: 35px;
+        }
+        #sec1_image{
+            height : 55px;
+            width : 75px;
+            /* border : 1px solid white ; */
+            margin-top: 250px;
+            margin-left: 1290px;
+            background-color: white;
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+            position: fixed;
+        }
+        .section2{
+            height : 85vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        #sec2_head{
+            height : 40px;
+            width : 250px;
+            /* border: 1px solid; */
+            margin-left: 500px;
+            padding: 1px;
+            margin-top: 40px;
+        }
+        #head_word{
+            font-size: 25px;
+        }
+        .sec2_box{
+            height : 400px;
+            width : 500px;
+            /* border : 1px solid; */
+            margin-top: 35px;
+            padding : 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/zostan_pilotem.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .b1{
+            width : 650px;
+            margin-left: 100px;
+            background-image: none;
+        }
+        #b1_box1{
+            height : 180px;
+            width : 550px;
+            /* border : 1px solid; */
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+        #b1_box2{
+            height : 30px;
+            width : 150px;
+            /* border : 1px solid; */
+            margin-left: 50px;
+            padding: 1px;
+            margin-top: 20px;
+            color : rgb(0,170,255);
+            cursor: pointer;
+        }
+        #b1box1_para{
+            color :  rgb(102,102,102);
+            line-height: 30px;
+        }
+        .section3{
+            height : 85vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        #sec3_head{
+            height : 40px;
+            width : 360px;
+            /* border: 1px solid; */
+            margin-left: 450px;
+            padding: 1px;
+            margin-top: 40px;
+        }
+        #head_word{
+            font-size: 25px;
+        }
+        .sec3_box{
+            height : 400px;
+            width : 500px;
+            /* border : 1px solid; */
+            margin-top: 35px;
+            padding : 1px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/zostan_instruktorem.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .b1{
+            width : 650px;
+            margin-left: 100px;
+            background-image: none;
+        }
+        #b1_box1{
+            height : 220px;
+            width : 550px;
+            /* border : 1px solid; */
+            margin-top: 70px;
+            margin-left: 50px;
+        }
+        #b1_box2{
+            height : 30px;
+            width : 150px;
+            /* border : 1px solid; */
+            margin-left: 50px;
+            padding: 1px;
+            margin-top: 5px;
+            color : rgb(0,170,255);
+            cursor: pointer;
+        }
+        #b1box1_para{
+            color :  rgb(102,102,102);
+            line-height: 30px;
+        }
+        .section4{
+            height : 85vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+        }
+        #sec4_box1{
+            height : 490px;
+            width : 500px;
+            /* border : 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+            background-image:url(./images/masz_pytania_filtr.jpg) ;
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+        }
+        #sec4_box2{
+            height : 490px;
+            width : 730px;
+            /* border: 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+        }
+        #sec4b2_box1{
+            height : 80px;
+            width : 600px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin-left: 100px;
+            margin-top: 40px;
+
+        }
+        #sec4_para{
+            color: rgb(102,102,102);
+            margin-top: 10px;
+        }
+        #sec4_head{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #sec4b2_box2{
+            height : 398px;
+            width : 628px;
+            /* border : 1px solid; */
+            padding: 1px;
+            margin-left: 100px;
+        }
+        #form1{
+            height : 50px;
+            width : 300px;
+            border : 1px solid  rgba(102, 102, 125, 0.459);
+            margin-top: 20px;
+            font-size: 17px;
+            color:  rgba(102, 102, 125, 0.267);
+        }
+        #form2{
+            height : 50px;
+            width : 300px;
+            border : 1px solid  rgba(102, 102, 125, 0.438);
+            margin-top: 20px;
+            margin-left: 10px;
+            font-size: 17px;
+            color:  rgba(102, 102, 125, 0.425);
+        }
+        #form3{
+            height : 50px;
+            width : 300px;
+            border : 1px solid  rgba(102, 102, 125, 0.479);
+            margin-top: 20px;
+            font-size: 17px;
+            color:  rgba(102, 102, 125, 0.384);
+        }
+        #form4{
+            height : 50px;
+            width : 300px;
+            border : 1px solid  rgba(102, 102, 125, 0.438);
+            margin-top: 20px;
+            margin-left: 10px;
+            font-size: 17px;
+            color:  rgba(102, 102, 125, 0.39);
+        }
+        #form5{
+            height : 180px;
+            width : 618px;
+            border : 1px solid  rgba(102, 102, 125, 0.459);
+            margin-top: 20px;
+            font-size: 17px;
+            color:  rgba(102, 102, 125, 0.425);
+        }
+        #sec4_btn{
+            height : 45px;
+            width : 80px;
+            margin-left: 538px;
+            margin-top: 5px;
+            background-color: transparent;
+            border : 1px solid rgb(0,170,255);
+            color : rgb(0,170,255);
+            cursor: pointer;
+        }
+        #sec4_btn:hover{
+            background-color:  rgba(102, 102, 125, 0.123);
+        }
+        .section5{
+            height : 70vh;
+            width : 100%;
+            /* border : 1px solid; */
+            padding: 1px;
+            background-color: rgb(0,18,43);
+        }
+        #sec5_box1{
+            height : 200px;
+            width : 500px;
+            /* border : 1px solid white; */
+            margin-top: 60px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 150px;
+            padding: 1px;
+        }
+        #sec5_box2{
+            height : 230px;
+            width : 500px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 50px;
+            padding: 1px;
+        }
+        #sec5_box3{
+            height : 150px;
+            width : 1060px;
+            /* border : 1px solid white; */
+            margin-left: 150px;
+            padding: 1px;
+        }
+        #sec5b1_cube1{
+            height : 180px;
+            width : 160px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 3px;
+            padding: 1px;
+        }
+        #sec5b1_cube2{
+            height : 180px;
+            width : 160px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+        }
+        #sec5b1_cube3{
+            height : 180px;
+            width : 160px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+        }
+        #sec5c1_head{
+            color : white;
+            margin-left: 5px;
+            
+        }
+        #nav_bar1{
+            height : 140px;
+            width : 120px;
+            /* border : 1px solid white; */
+            margin-top: 10px;
+            
+        }
+        #list4{
+            list-style: none;
+            color :  rgb(185, 185, 211);
+            cursor: pointer;
+            
+        }
+        #nav4_ul{
+            margin-left: 5px;
+            line-height: 30px;
+            font-size: small;
+            margin-top: 10px;
+        }
+        #sec5c2_head{
+            color : white;
+            margin-left: 5px;
+            
+        }
+        #nav_bar2{
+            height : 140px;
+            width : 120px;
+            /* border : 1px solid white; */
+            margin-top: 20px;
+            
+        }
+        #list2{
+            list-style: none;
+            color :  rgb(185, 185, 211);
+            cursor: pointer;
+
+        }
+        #nav2_ul{
+            /* margin-left: -15px; */
+            line-height: 30px;
+            font-size: small;
+        }
+        #sec5c3_head{
+            color : white;
+            margin-left: 5px;
+            
+        }
+        #nav_bar3{
+            height : 140px;
+            width : 120px;
+            /* border : 1px solid white; */
+            margin-top: 20px;
+            
+        }
+        #list3{
+            list-style: none;
+            color :  rgb(185, 185, 211);
+            cursor: pointer;
+
+        }
+        #nav3_ul{
+            /* margin-left: -15px; */
+            line-height: 30px;
+            font-size: small;
+        }
+        #sec5b2_head{
+            color : white
+        }
+        #form6{
+            height : 50px;
+            width : 400px;
+            border-radius: 8px;
+            margin-top: 10px;
+
+        }
+        #sec5b2_btn{
+            height : 50px;
+            width : 400px;
+            border-radius: 8px;
+            margin-top: 10px;
+            border : 2px solid white;
+            background-color: transparent;
+            color : white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        #sec5b2_btn:hover{
+            background-color: rgba(0, 0, 255, 0.24);
+            border : transparent
+        }
+        #sec5b2_head2{
+            color : white;
+            margin-top: 20px;
+        }
+        #sec5b3_box1{
+            height : 40px;
+            width : 140px;
+            /* border : 1px solid white; */
+            padding: 1px;
+            margin-top: 15px;
+            background-position: center;
+            background-size: cover;
+        }
+        #sec5b3_box2{
+            height : 2px;
+            width : 1057px;
+            /* border : 1px solid; */
+            background-color:rgb(0,170,255) ;
+            margin-top: 10px;
+            padding: 1px;
+        }
+        #sec5b3_box3{
+            height : 25px;
+            width : 250px;
+            /* border : 1px solid white; */
+            margin-top: 20px;
+            padding: 1px;
+        }
+        #sec5b3_box4{
+            height : 40px;
+            width : 90px;
+            /* border : 1px solid white; */
+            margin-left: 965px;
+            margin-top: -30px;
+            padding: 1px;
+        }
+        #sec5b3b4_box1{
+            height : 25px;
+            width : 25px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(https://toppng.com/uploads/preview/facebook-black-white-icon-facebook-face-book-png-facebook-icon-for-footer-11562873944v8l8yjbnby.png);
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+        }
+        #sec5b3b4_box2{
+            height : 25px;
+            width : 25px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(https://www.seekpng.com/png/detail/789-7898321_youtube-social-dark-circle-youtube-white-icon-png.png);
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+        }
+        #sec5b3b4_box3{
+            height : 25px;
+            width : 25px;
+            /* border : 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTOSRiTuIRegyFjQRglUqeW9MgI1V2cqxtvKtZlkk&s) ;
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+        }
+        #sec5b3_head{
+            color : rgb(102,102,125)
+        }
+    </style>
+</head>
+<body>
+    <div class = "section1">
+        <nav id = "navbar1">
+            <div id = "logo">
+                <img src="./images/logoFlarisSVG.svg" alt="">
+            </div>
+            <ul id = "nav1_ul">
+                <li id = "list1">Aircraft</li>
+                <li id = "list1">Piloting Courses</li>
+                <li id = "list1">Purchase</li>
+                <li id = "list1">News</li>
+                <li id = "list1">Our Story</li>
+                <li id = "list1">Press Room</li>
+                <li id = "list1">Contact</li>
+            </ul>
+            <div id = "icon1">
+                <a href="https://www.facebook.com/" target="_blank"></a>
+            </div>
+            <div id = "icon2">
+                <a href="https://www.youtube.com/" target="_blank"></a>
+            </div>
+            <div id = "icon3">
+                <a href="https://www.instagram.com/" target="_blank"></a>
+            </div>
+            <div id = "icon4"></div>
+        </nav>
+        <div id = "sec1_content">
+            <h2 id = "sec1_head1">› FLARIS LAR01 ‹</h2>
+            <h1 id = "sec1_head2">SIT AT THE CONTROLS</h1>
+        </div>
+        <div id = "sec1_image">
+            <img src="./images/logo_48.png" alt="">
+        </div>
+    </div>
+    <div class = "section2">
+        <div id = "sec2_head">
+            <h2 id = "head_word">› BECOME A PILOT ‹</h2>
+        </div>
+        <div class = "sec2_box"></div>
+        <div class = "sec2_box b1">
+            <div id = "b1_box1">
+                <p id = "b1box1_para">Get a taste of flying a jet and soar to the highest level of <br>independence. The skills you will acquire during the course will open <br>your way to astonishing jet flights. The culmination of the course is<br> a pilot’s license allowing you to fly Flaris LAR 01 single-handedly <br>at any distance. Also, upon completing the course, you will receive <br>a membership in our elite association which is admired worldwide.</p>
+                
+            </div>
+            <div id = "b1_box2">
+                <h4 id = "b1box2_head">More information</h4>
+            </div>
+        </div>
+    </div>
+    <div class = "section3">
+        <div id = "sec3_head">
+            <h2 id = "head_word">› BECOME AN INSTRUCTOR ‹</h2>
+        </div>
+        <div class = "sec3_box"></div>
+        <div class = "sec3_box b1">
+            <div id = "b1_box1">
+                <p id = "b1box1_para">Broaden your professional skills and become a flight-instructor of an<br> aircraft that piques interest across the entire world. Getting a flight <br>instructor’s certificate of Flaris aircraft may turn out to be the most<br> significant and gratifying decision in your career. If you have not <br>steered a jet-propelled aircraft before, our course will certainly thrill <br>you with unforgettable impressions of flying this high-performance <br>jet.</p>
+                
+            </div>
+            <div id = "b1_box2">
+                <h4 id = "b1box2_head">More information</h4>
+            </div>
+        </div>
+    </div>
+    <div class = "section4">
+        <div id = "sec4_box1"></div>
+        <div id = "sec4_box2">
+            <div id = "sec4b2_box1">
+                <h2 id = "sec4_head">›CONTACT US</h2>
+                <p id = "sec4_para">We are currently developing training programs. Leave your details and we will<br> contact you when we can provide more information.</p>
+            </div>
+            <div id = "sec4b2_box2">
+                <form action ="">
+                    <input id = "form1" type="text" placeholder = "First name">
+                    <input id = "form2" type="e-mail" placeholder = "e-mail"><br>
+                    <input id = "form3" type="text" placeholder = "Last name">
+                    <input id = "form4" type="number" placeholder = "Number"><br>
+                    <input id = "form5" type="text" placeholder = "Your message">
+                </form>
+                <button id = "sec4_btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <div class = "section5">
+        <div id = "sec5_box1">
+            <div id = "sec5b1_cube1">
+                <h5 id = "sec5c1_head">Legal</h5>
+                <nav id = "nav_bar1">
+                    <ul id = "nav4_ul">
+                        <li id = "list4">GDPR</li>
+                        <li id = "list4">Privacy policy</li>
+                        <li id = "list4">Cookies</li>
+                    </ul>
+                </nav>
+            </div>
+            <div id = "sec5b1_cube2">
+                <h5 id = "sec5c2_head">About</h5>
+                <nav id = "nav_bar2">
+                    <ul id = "nav2_ul">
+                        <li id = "list2">Press room</li>
+                        <li id = "list2">Manufacturer</li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div id = "sec5b1_cube3">
+                <h5 id = "sec5c3_head">Informations</h5>
+                <nav id = "nav_bar3">
+                    <ul id = "nav3_ul">
+                        <li id = "list3">FAQ</li>
+                        <li id = "list3">News</li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id = "sec5_box2">
+            <h2 id = "sec5b2_head">Sign up to our newsletter</h2>>
+            <form action = "">
+                <input id = "form6" type="e-mail" placeholder = "e-mail"><br>
+                <button id = "sec5b2_btn">Sign up</button>
+                <h5 id = "sec5b2_head2">Form protected by reCAPTCHA and Google</h5>
+            </form>
+        </div>
+        <div id = "sec5_box3">
+            <div id = "sec5b3_box1">
+                <img src="./images/LOGO_FLARIS_white-1.png" alt="">
+            </div>
+            <div id = "sec5b3_box2"></div>
+            <div id = "sec5b3_box3">
+                <h5 id = "sec5b3_head">© 2022 Flaris. All rights reserved.</h5>
+            </div>
+            <div id = "sec5b3_box4">
+                <div id = "sec5b3b4_box1"></div>
+                <div id = "sec5b3b4_box2"></div>
+                <div id = "sec5b3b4_box3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
